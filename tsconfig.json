@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "rootDir": "fixture/src",
+    "outDir": "fixture/dist",
+    "baseUrl": "./",
+    "lib": [
+      "dom",
+      "es2015"
+    ]
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

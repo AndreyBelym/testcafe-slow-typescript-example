@@ -1,0 +1,15 @@
+{
+  "name": "testcafe-slow-modules-example",
+  "scripts": {
+    "postinstall": "./create_fixture.sh",
+    "benchmark": "echo TestCafé Version: $(testcafe --version) && npm run benchmark:prebuild && npm run benchmark:native",
+    "benchmark:native": "time testcafe chrome fixture/src/index.ts > /dev/null",
+    "benchmark:prebuild": "time sh -c 'tsc && testcafe chrome fixture/dist/index.js' > /dev/null"
+  },
+  "license": "WTFPL",
+  "dependencies": {
+    "testcafe": "^0.16.2",
+    "tslib": "^1.7.1",
+    "typescript": "^2.4.1"
+  }
+}
