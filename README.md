@@ -1,5 +1,7 @@
 # TestCafé Slow TypeScript Example
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/caseyWebb/testcafe-slow-typescript-example.svg)](https://greenkeeper.io/)
+
 TestCafé offers TypeScript support OOTB, but there is significant overhead compared to compiling the TypeScript, then running the output.
 
 This problem appears to get exponentially worse as more modules are introduced.
